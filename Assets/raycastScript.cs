@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Come on Git
 public class raycastScript : MonoBehaviour {
 	RaycastHit hit;
 	private Vector3 crosshairPosition;
