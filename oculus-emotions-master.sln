@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{32151F31-9352-83C7-8F46-E2FF2820FD2A}") = "oculus-emotions-master", "Assembly-CSharp.csproj", "{2E24E6D0-8844-0AE8-B62B-7EF52DE49A09}"
+EndProject
+Project("{32151F31-9352-83C7-8F46-E2FF2820FD2A}") = "oculus-emotions-master", "Assembly-CSharp-Editor.csproj", "{6112DD7A-784F-D2F5-6595-6E4ADA0FE80B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E24E6D0-8844-0AE8-B62B-7EF52DE49A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E24E6D0-8844-0AE8-B62B-7EF52DE49A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E24E6D0-8844-0AE8-B62B-7EF52DE49A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E24E6D0-8844-0AE8-B62B-7EF52DE49A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6112DD7A-784F-D2F5-6595-6E4ADA0FE80B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6112DD7A-784F-D2F5-6595-6E4ADA0FE80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6112DD7A-784F-D2F5-6595-6E4ADA0FE80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6112DD7A-784F-D2F5-6595-6E4ADA0FE80B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
