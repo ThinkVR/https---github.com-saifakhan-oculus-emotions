@@ -4,47 +4,16 @@ using System.Collections;
 public class raycastScript : MonoBehaviour {
 	RaycastHit hit;
 	private Vector3 crosshairPosition;
+	public string Url;
 
 	// Use this for initialization
 	void Start () {
-	class PostJsonDataScript : MonoBehaviour
+		Url = "https://dc4fcee9-a480-4a90-bdcb-604c6a94bf62:@api.postmates.com/v1/customers/cus_Kh57GI1WZmMazk/delivery_quotes ";
+		PostData("dc4fcee9-a480-4a90-bdcb-604c6a94bf62");
+		// Use this for initialization
+		Debug.Log(Url);
 
-			// Use this for initialization
-			string Url;
-			Start()
-			{
-				Url = "https://api.postmates.com//v1/customers/:cus_Kh6lCwLOnCLaG-/delivery_quotes ";
-				PostData("2a3fbcc1-c142-4ae5-80a1-62e4343a170f");
-			}
-			// Update is called once per frame
-			Update()
-			{
-
-			}
-			void PostData(string apiK)
-			{
-				WWWForm dataParameters = new WWWForm();
-				dataParameters.AddField("username", apiK);
-				dataParameters.AddField("password", "");
-				dataParameters.AddField("dropoff_address","1201 E California Blvd California Institute of Technology Pasadena, CA 91106");
-				dataParameters.AddField("pickup_address","171 N Holliston Ave, Pasadena, CA 91106");
-				WWW www = new WWW(Url,dataParameters);
-				StartCoroutine("PostdataEnumerator", Url);
-			}
-			IEnumerator PostdataEnumerator(WWW www)
-			{
-				yield return www;
-				if (www.error != null)
-				{
-					Debug.Log("Data Submitted");
-				}
-				else
-				{
-					Debug.Log(www.error);
-				}
-			}
-		}
-		
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -58,5 +27,32 @@ public class raycastScript : MonoBehaviour {
 
 		Debug.DrawRay (transform.position, fwd, Color.blue);
 
+	}
+
+	void PostData(string apiK)
+	{
+		WWWForm dataParameters = new WWWForm();
+		// var headers = new Hashtable ();
+		// headers["Authorization"] = "Basic " + System.Convert.ToBase64String(System.Text.Encoding.ASCII.GetBytes(apiK+":"));
+//		dataParameters.AddField("username", apiK);
+//		dataParameters.AddField("password", "");
+		dataParameters.AddField("dropoff_address","20 McAllister St, San Francisco, CA");
+		dataParameters.AddField("pickup_address","101 Market St, San Francisco, CA");
+		WWW www = new WWW(Url ,dataParameters);
+		StartCoroutine(PostdataEnumerator(www));
+	}
+
+	IEnumerator PostdataEnumerator(WWW www)
+	{
+		yield return www;
+		if (www.error != null)
+		{
+			Debug.Log (www.text);
+			Debug.Log("Data Submitted");
+		}
+		else
+		{
+			Debug.Log(www.text);
+		}
 	}
 }

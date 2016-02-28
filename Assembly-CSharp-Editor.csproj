@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6112DD7A-784F-D2F5-6595-6E4ADA0FE80B}</ProjectGuid>
+    <ProjectGuid>{CAE2B965-41F0-90CD-D143-8DCD3E0332C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -77,7 +77,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="SharpOSC">
- <HintPath>/Users/saifkhan/Desktop/oculus-emotions-master/Assets/OVR/Scripts/SharpOSC.dll</HintPath>
+ <HintPath>/Users/saifkhan/oculus-emotions/Assets/OVR/Scripts/SharpOSC.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{2E24E6D0-8844-0AE8-B62B-7EF52DE49A09}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{BB9EC1FD-26AC-63FB-8D33-C043B96A37A7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
