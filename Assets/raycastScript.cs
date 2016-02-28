@@ -21,7 +21,7 @@ public class raycastScript : MonoBehaviour {
 		Vector3 fwd = transform.TransformDirection(Vector3.forward);
 		if (Physics.Raycast(transform.position, fwd, out hit, 100)) {
 			if (hit.collider.name == "MagicLamp") {
-				Debug.Log ("You ordered food!");
+				//Debug.Log ("You ordered food!");
 			}
 		}
 
