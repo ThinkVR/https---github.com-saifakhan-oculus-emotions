@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2E24E6D0-8844-0AE8-B62B-7EF52DE49A09}</ProjectGuid>
+    <ProjectGuid>{BB9EC1FD-26AC-63FB-8D33-C043B96A37A7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -88,7 +88,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="SharpOSC">
- <HintPath>/Users/saifkhan/Desktop/oculus-emotions-master/Assets/OVR/Scripts/SharpOSC.dll</HintPath>
+ <HintPath>/Users/saifkhan/oculus-emotions/Assets/OVR/Scripts/SharpOSC.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

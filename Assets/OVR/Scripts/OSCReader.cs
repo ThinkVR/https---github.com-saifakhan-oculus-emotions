@@ -92,6 +92,7 @@ namespace muse_osc_server
 
 			concentratedObject.GetComponent<Renderer>().material.color = concentrationColor;
 
+
 			Color skyColor = new Color(1, concentration, concentration, 1);
 
 			Sky.GetComponent<Renderer>().material.color = skyColor;
